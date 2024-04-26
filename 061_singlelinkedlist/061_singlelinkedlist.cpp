@@ -47,3 +47,12 @@ void addNode() {
 		previous = current;
 		current = current->next;
 	}
+	nodeBaru->next = current;
+	previous->next = nodeBaru;
+}
+
+bool serachNode(int nim, Node* current, Node* previous) {
+	previous = START;
+	current = START;
+	while (current != NULL && nim > current->noMhs)
+	{
